@@ -1,0 +1,30 @@
+/*
+1. the function has to print the the contents of the arrays array1 and array2.
+2. the elements of array2 will be deleted, alternating between the .pop() and .shift() methods,
+ while adding the removed values to the end of array1.
+3. the contents of array1 will be printed.
+
+*/
+
+let array1 = ["first", "second"];
+let array2 = ["third", "fourth"];
+
+function popAndShift () {
+console.log("First array:" + array1);
+console.log("Second array:" + array2);
+
+	const arrayLength = array2.length;
+	for(let i=0; i < arrayLength; i++) {
+		if (i%2 == 0) {
+			let value = array2.pop();
+			array1.push(value);
+		}
+		else{
+			let value1 = array2.shift();
+			array1.push(value1);
+		}
+	
+	}
+	
+	console.log("Resulting array:"+ array1);
+}	
