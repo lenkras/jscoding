@@ -1,5 +1,5 @@
 /*
-Print all prime numbers which are in the range of 0 to maxInputNumber
+Print all prime numbers which are in the range of 0 to maxInputNumber 60.
 */
 let maxInputNumber = 60;
 let primeNumbersCount = 0;
